@@ -91,9 +91,11 @@ static force_inline NSNumber *YYNSNumberCreateFromID(__unsafe_unretained id valu
                 @"YES" :    @(YES),
                 @"Yes" :    @(YES),
                 @"yes" :    @(YES),
+                @"Y"   :    @(YES), // SCAdd
                 @"NO" :     @(NO),
                 @"No" :     @(NO),
                 @"no" :     @(NO),
+                @"N"  :     @(NO), // SCAdd
                 @"NIL" :    (id)kCFNull,
                 @"Nil" :    (id)kCFNull,
                 @"nil" :    (id)kCFNull,
