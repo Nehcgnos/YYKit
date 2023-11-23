@@ -124,6 +124,9 @@ static dispatch_queue_t YYAsyncLayerGetReleaseQueue() {
             return value != sentinel.value;
         };
         CGSize size = self.bounds.size;
+        if (size.height <= 0 || size.width <= 0) {
+            return;
+        }
         BOOL opaque = self.opaque;
         CGFloat scale = self.contentsScale;
         CGColorRef backgroundColor = (opaque && self.backgroundColor) ? CGColorRetain(self.backgroundColor) : NULL;
