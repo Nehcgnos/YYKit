@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'YYKit-SCAdd'
+  s.name         = 'YYKit'
   s.summary      = 'A collection of iOS components.Modified by SongC'
   s.version      = '1.0.9.3'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
